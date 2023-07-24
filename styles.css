@@ -4,130 +4,299 @@ body {
 }
 
 
-/* STYLING FOR THE MAIN CONTAINER */
-.main-container {
-	background: #F0F2F5;
-	font-family: 'SFProDisplay-Regular', 'Helvetica';
+/* STYLING FOR THE MAIN CONTENT */
+div.content  img {
+	width: 400px;
+	height: 400px;
+}
+
+div.content {
 	display: flex;
-	justify-content: center;
-	margin: 0 0 0 0;
-	padding: 100px 0 295px 0;
-}
-
-main .left {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	color: #3882F6;
-}
-
-h1 {
-	font-size: 36px;
-	font-weight: 900;
-}
-
-.right {
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	width: 100%;
+	height: ;
+	justify-content: space-around;
 	align-items: center;
-	background: #FFFFFF;
-	padding: 24px 9px 15px 9px;
-	margin: 0 0 20px 0;
-	border-radius: 8px;
-	box-shadow: 1px 1px 1px 1px #D3D3D3;
+	background-color: #F0F2F5;
+	padding: 72px 10px 112px;
 }
 
-.text {
+div.right-content form {
+	background-color: #fff;
+	padding: 20px 20px 20px 14px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: -3px -2px 29px -11px rgba(0,0,0,0.75);
+	position: relative;
+}
+
+div.right-content {
+	width: 100%;
+	max-width: 400px;
+	margin-left: -40px;
+	border-radius: none;
+}
+
+form p.password {
+	color: #1877F2;
+	margin-top: 0;
+}
+
+p.password:hover {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 6px 3px;
+	border: 1px solid #D3D3D3;
+	border-radius: 6px;
+}
+
+input[type="text"],
+button.create {
+	padding-top: 0;
+	margin: 0;
+}
+
+input[type="text"] {
+	padding-bottom: 0;
+	height: 40px; 
+}
+
+input[type="text"],
+input[type="password"] {
+	padding-left: 8px;
+	font-size: 17px;
+	font-weight: 100;
+}
+
+.log-in,
+.create {
+	width: 103%;
+	height: 50px;
+	background-color: #1877F2;
+	font-family: "Helevtica", 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.log-in,
+.create:hover {
+	cursor: pointer;
+}
+
+button.log-in {
+	transition:0.15s transform ease;
+}
+
+.log-in:hover {
+	transform: scaleX(0.8);
+}
+
+.create {
+	padding: 0 16px;
+	font-size: 17px;
+	background-color: #42B728;
+	width: 60%;
+	border-radius: 8px;
+}
+
+div.button2 {
+	margin-top: 50px;
+	transition: 0.13s transform ease;
+}
+
+.button2:hover {
+	transform: scaleX(1.2);
+}
+
+div.right-content p {
+	text-align: center;
+}
+
+div.right-content p span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+div.right-content p span {
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "SFProText-Regular","Helevtica", 'Arial';
+}
+
+div.right-content hr.first-break {
+	margin: 20px 0;
+	border-color: 1px solid lightgrey;
+}
+
+div.first-break {
+	width: 93%;
+	height: 1px;
+	background-color: #D3D3D3;
+	position: absolute;
+	top: 238px;
+}
+
+div.left-content p.connect {
+	font-family: 'SFProDisplay-Regular', "Helevtica", 'Arial';
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 100px 0 0;
-	width: 280px;
-	color: #1C1E21;
+	width: 400px;
+	font-weight: 400;
+	font-size: 24px;
+	margin-top: -140px;
+	margin-left: 40px;
 }
 
-/* STYLING FOR THE INPUT SECTION */
-input {
-	margin: 0 0 10px 0;
-	border-radius: 8px;
-	border: 0.5px solid grey;
-	width: 300px;
-	height: 35px;
+div.left-content {
+	margin-top: -208px;
+	margin-left: -80px;
 }
 
-#log {
-	width: 309px;
-	height: 35px;
-	background: #3882F6;
-	color: #FFFFFF;
-	font-weight: bold;
-	border-radius: 8px;
-	border-color: #3882F6;
+/* STYLING FOR PSEDUO-CLASSES TOP SECTION */
+input.password:active {
+	border-color: #1877F2;
 }
 
-#create {
-	width: 170.5px;
-	height: 39px;
-	background: #42B72A;
-	color: #FFFFFF;
-	margin: 27px 0 0;
-	border-radius: 8px;
-	border-color: #42B72A;
+p.password:hover {
+	text-decoration: underline;
 }
 
-#forget {
-	color:#3882F6;
-}
-
-#color {
-	color: #8A8D91;
-}
-
-.page {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 0 0 -4em 5em;
-	margin: 0 0 -40px -23.70em;
-	font-size: 12.7px;
-}
 
 /* STYLING FOR THE FOOTER */
 footer {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	position: relative;
+}
+
+footer div.first-list ul {
+	display: flex;
 	flex-wrap: wrap;
+	gap: 7px;
+	margin-left: -35px;
+	justify-content: center;
 	align-items: center;
-	padding: 32px 0 22px 0;
-	background: #FFFFFF;
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	width: 100%;
+	max-width: 900px;
+	list-style: none;
+}
+
+footer ul {
+	font-family: "Helevtica", 'Arial', sans-serif;
 	font-size: 12px;
+}
+
+footer div.first-list ul li:hover {
+	text-decoration:  #737373 underline;
+}
+
+footer div.second-list ul li:hover {
+	text-decoration: #737373 underline;
+}
+
+footer div.first-list ul a {
+	text-decoration: none;
 	color: #8A8D91;
 }
 
-#features {
-	width: 760px;
-	margin: 0 0 0 -100px;
+footer div.first-list ul li span {
+	color: #737373;
 }
 
-#language {
-	width: 854px;
+footer div.second-list ul {
 	display: flex;
-	align-content: baseline;
-	padding: 0 0 0 0;
-	margin: 0 0 -16px 0;
+	gap: 7px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	list-style: none;
 }
 
-#meta {
-	width: 864px;
+footer div.second-list {
+	padding-left: 60px;
 }
 
-.plus-button {
-	padding: 0 0 19px 500px;
-	margin: 0 0 -30px -32px;
-	font-weight: 900;
+footer div.second-list ul a {
+	text-decoration: none;
+	color: #8A8D91;
 }
 
-#last {
-	margin: 0 0 5px 0;
+footer button {
+	width: 3%;
+}
+
+footer button:hover {
+	background-color: #D3D3D3;
+	cursor: pointer;
+}
+
+footer div.copyright ul {
+	display: flex;
+	justify-content: ;
+	list-style: none;
+}
+
+footer div.copyright ul a {
+	text-decoration: none;
+	color: #737373;
+}
+
+footer div.copyright {
+	width: 70%;
+	padding-left: 58px; 
+}
+
+footer div.foot {
+	border: 1px solid lightgrey;
+	width: 80%;
+	max-width: 1000px;
+	position: absolute;
+	top: 70px;
+	left: 100px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:900px) {
+	div.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer {
+		position: relative;
+	}
+
+	footer div.foot {
+		width: 82%;
+		position: absolute;
+		left: 40px;
+	}
+
+	footer div.second-list {
+		padding-left: 0;
+	}
+
+
+	footer div.copyright {
+		padding-left: 0;
+	}
+
+	footer div.first-list {
+		padding-right: 30px;
+	}
+
+	footer button {
+		width: 5%;
+		height: 27px;
+	}
 }
