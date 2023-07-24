@@ -2,4 +2,4 @@
 This is a prototype of the  normal facebook login page
 
 
-To be viewed on a PC, not configured for phones yet
+Can be viewd on both phones and pc, its responsive 
